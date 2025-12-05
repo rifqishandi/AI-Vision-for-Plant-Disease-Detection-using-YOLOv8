@@ -26,15 +26,18 @@ Sistem ini dirancang dengan arsitektur *Edge-Cloud Hybrid* untuk efisiensi data:
 ![Desain Arsitektur IoT](https://github.com/rifqishandi/AI-Vision-for-Plant-Disease-Detection-using-YOLOv8/raw/main/assets/Desain%20Arsitektur%20IoTT.PNG)
 
 1.  **Device Layer:** Sensor kamera mengambil citra tanaman di lahan.
-2.  **Edge Layer:** Model YOLOv8 berjalan lokal untuk mendeteksi penyakit secara instan.
-3.  **Connectivity:** Hasil diagnosis dikirim via protokol komunikasi (WiFi/LoRa).
-4.  **Cloud & User Layer:** Data disimpan di database dan ditampilkan pada Dashboard Petani.
+2.  **Edge Layer:** Model YOLOv8 berjalan lokal (Raspberry Pi/ESP32) untuk mendeteksi penyakit secara instan.
+3.  **Connectivity:** Hasil diagnosis dikirim via protokol komunikasi (WiFi/LoRa) menggunakan MQTT.
+4.  **Cloud & User Layer:** Data disimpan di database cloud dan ditampilkan pada Dashboard Petani untuk monitoring.
 
 ## 📂 Struktur Direktori
 
 ```text
+├── assets/            # Menyimpan gambar pendukung (diagram arsitektur)
 ├── data/              # Folder penyimpanan dataset (Train/Val)
 ├── models/            # Menyimpan bobot model hasil training (best.pt)
 ├── predict.py         # Script Python untuk menjalankan prediksi/inferensi
+├── evaluate.py        # Script untuk menghitung metrics lengkap (Confusion Matrix, F1)
+├── training.py        # Script utama pelatihan model
 ├── requirements.txt   # Daftar library yang dibutuhkan (YOLO, Scikit-learn, dll)
 └── README.md          # Dokumentasi proyek ini
