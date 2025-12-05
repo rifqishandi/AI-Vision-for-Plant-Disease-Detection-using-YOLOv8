@@ -14,14 +14,27 @@ Sistem ini mengintegrasikan **Kecerdasan Buatan (AI)** menggunakan algoritma **Y
 
 ## 🚀 Fitur Utama
 
-* **AI Model:** Menggunakan `yolov8n-cls` yang sangat ringan dan cepat.
-* **Real-time Ready:** Dioptimalkan untuk inferensi cepat pada perangkat dengan sumber daya terbatas (*resource-constrained devices*).
+* **High Accuracy:** Mencapai akurasi **99.73%** pada dataset validasi PlantVillage.
+* **AI Model:** Menggunakan arsitektur `yolov8-cls` yang dioptimalkan untuk klasifikasi cepat.
+* **Real-time Ready:** Dirancang untuk inferensi cepat pada perangkat dengan sumber daya terbatas (*resource-constrained devices*).
+* **IoT Integration:** Struktur output data siap dikirim melalui protokol ringan seperti MQTT.
+
+## 🏗️ Arsitektur Sistem IoT
+
+Sistem ini dirancang dengan arsitektur *Edge-Cloud Hybrid* untuk efisiensi data:
+
+![Desain Arsitektur IoT](https://github.com/rifqishandi/AI-Vision-for-Plant-Disease-Detection-using-YOLOv8/raw/main/assets/Desain%20Arsitektur%20IoTT.PNG)
+
+1.  **Device Layer:** Sensor kamera mengambil citra tanaman di lahan.
+2.  **Edge Layer:** Model YOLOv8 berjalan lokal untuk mendeteksi penyakit secara instan.
+3.  **Connectivity:** Hasil diagnosis dikirim via protokol komunikasi (WiFi/LoRa).
+4.  **Cloud & User Layer:** Data disimpan di database dan ditampilkan pada Dashboard Petani.
 
 ## 📂 Struktur Direktori
 
 ```text
-├── data/              # Sampel data atau folder dataset (split train/val)
-├── models/            # Menyimpan bobot model hasil training (best.pt, .onnx)
-├── predict.py         # Script utama untuk menjalankan prediksi pada gambar
-├── requirements.txt   # Daftar dependensi library Python
-└── README.md          # Dokumentasi proyek
+├── data/              # Folder penyimpanan dataset (Train/Val)
+├── models/            # Menyimpan bobot model hasil training (best.pt)
+├── predict.py         # Script Python untuk menjalankan prediksi/inferensi
+├── requirements.txt   # Daftar library yang dibutuhkan (YOLO, Scikit-learn, dll)
+└── README.md          # Dokumentasi proyek ini
