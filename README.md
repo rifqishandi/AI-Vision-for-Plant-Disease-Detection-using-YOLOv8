@@ -14,7 +14,7 @@ Sistem ini mengintegrasikan **Kecerdasan Buatan (AI)** menggunakan algoritma **Y
 
 ## 🚀 Fitur Utama
 
-* **AI Model:** Menggunakan `yolov8n-cls` (Nano) yang sangat ringan dan cepat.
+* **AI Model:** Menggunakan `yolov8n-cls` yang sangat ringan dan cepat.
 * **Real-time Ready:** Dioptimalkan untuk inferensi cepat pada perangkat dengan sumber daya terbatas (*resource-constrained devices*).
 
 ## 📂 Struktur Direktori
