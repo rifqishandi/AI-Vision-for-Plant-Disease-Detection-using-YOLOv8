@@ -16,8 +16,6 @@ Sistem ini mengintegrasikan **Kecerdasan Buatan (AI)** menggunakan algoritma **Y
 
 * **AI Model:** Menggunakan `yolov8n-cls` (Nano) yang sangat ringan dan cepat.
 * **Real-time Ready:** Dioptimalkan untuk inferensi cepat pada perangkat dengan sumber daya terbatas (*resource-constrained devices*).
-* **Augmented Training:** Model dilatih dengan teknik augmentasi data untuk mensimulasikan kondisi pencahayaan alami di lapangan.
-* **IoT Integration Ready:** Output model berupa struktur data ringan (JSON) yang siap dikirim melalui protokol MQTT.
 
 ## 📂 Struktur Direktori
 
