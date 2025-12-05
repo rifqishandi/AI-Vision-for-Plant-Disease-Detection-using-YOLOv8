@@ -30,6 +30,25 @@ Sistem ini dirancang dengan arsitektur *Edge-Cloud Hybrid* untuk efisiensi data:
 3.  **Connectivity:** Hasil diagnosis dikirim via protokol komunikasi (WiFi/LoRa) menggunakan MQTT.
 4.  **Cloud & User Layer:** Data disimpan di database cloud dan ditampilkan pada Dashboard Petani untuk monitoring.
 
+## 📊 Hasil Evaluasi Model
+
+Berdasarkan pengujian pada dataset validasi (4.134 sampel), model menunjukkan performa yang sangat tinggi dengan akurasi mencapai **99.73%**.
+
+Berikut adalah tangkapan layar hasil evaluasi langsung dari terminal:
+
+![Hasil Evaluasi Model](https://github.com/rifqishandi/AI-Vision-for-Plant-Disease-Detection-using-YOLOv8/blob/main/assets/evaluasi.png)
+
+### Rincian Performa Utama
+Dari gambar di atas, dapat dilihat ringkasan metrik sebagai berikut:
+
+| Metrik | Nilai Capaian |
+| :--- | :--- |
+| **Overall Accuracy** | **99.73%** |
+| **Macro Avg F1-Score** | **0.9971** |
+| **Weighted Avg F1-Score**| **0.9973** |
+
+> *Model menunjukkan konsistensi luar biasa dengan skor sempurna (1.0000) pada deteksi penyakit kritis seperti Potato Early Blight dan Tomato Bacterial Spot.*
+
 ## 📂 Struktur Direktori
 
 ```text
